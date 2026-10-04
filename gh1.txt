@@ -1,2 +1,3 @@
 github layer 1
 second commit in layer 1
+a third commit, pushed without restacking layer 2
