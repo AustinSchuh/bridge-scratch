@@ -1,0 +1,11 @@
+name: audit-scope1
+on:
+  push:
+    branches: ['gerrit/**']
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "audit: a workflow from a Gerrit change uploaded by a plain registered user ran in the base repo"
+          echo "event=${{ github.event_name }} ref=${{ github.ref }} actor=${{ github.actor }}"
